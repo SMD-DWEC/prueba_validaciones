@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Sergio Matamoros Delgado -->
 <html lang=es dir=ltr>
 
 <head>
@@ -19,7 +20,7 @@
   <div id=divError></div>
   <p>
     <label for=iMatricula>Matrícula</label>
-    <input type=text id=iMatricula />
+    <input type="text" id="iMatricula" pattern="\d{4}-\w{3}" />
   </p>
 
   <p>
@@ -41,7 +42,7 @@
 
   <p>
     <button type=button id=btnCero>Poner a Cero</button>
-    <button>Enviar</button>
+    <button id="send">Enviar</button>
   </p>
 
   <script src=js/validaciones.js></script>
